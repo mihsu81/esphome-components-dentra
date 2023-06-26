@@ -6,7 +6,7 @@
 #include "esphome/components/select/select.h"
 #include "esphome/components/ble_client/ble_client.h"
 #include "esphome/components/time/real_time_clock.h"
-#include "esphome/time/esp_time.h"
+#include "esphome/core/time.h"
 
 #include "../miot_client/miot_client.h"
 
