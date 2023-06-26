@@ -1,4 +1,5 @@
 #include "esphome/core/log.h"
+#include "esphome/time/esp_time.h"
 
 #include "miot_cwbs01_api.h"
 
