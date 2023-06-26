@@ -1,7 +1,7 @@
 #pragma once
 
 #include "miot_cwbs01_data.h"
-#include "esphome/time/esp_time.h"
+#include "esphome/core/time.h"
 
 namespace esphome {
 namespace miot_cwbs01 {
@@ -20,7 +20,7 @@ class MiotCWBS01Api {
   virtual bool send_frame(const void *data, uint8_t size) const = 0;
 
   bool request_state() const;
-  bool sync_time(const esphome::time::ESPTime &tm) const;
+  bool sync_time(const esphome::ESPTime &tm) const;
   bool set_cycle(bool enabled) const;
   bool set_power(bool enabled) const;
   bool set_mode(Mode mode) const;
