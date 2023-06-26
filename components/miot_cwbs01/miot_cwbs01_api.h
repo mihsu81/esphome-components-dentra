@@ -1,6 +1,7 @@
 #pragma once
 
 #include "miot_cwbs01_data.h"
+#include "esphome/time/esp_time.h"
 
 namespace esphome {
 namespace miot_cwbs01 {
