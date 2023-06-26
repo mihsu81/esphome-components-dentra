@@ -1,5 +1,6 @@
 #include "esphome/core/log.h"
-#include "esphome/time/esp_time.h"
+#include "esphome/core/time.h"
+
 
 #include "miot_cwbs01_api.h"
 
@@ -158,7 +159,7 @@ bool MiotCWBS01Api::request_state() const {
   return this->send_command_(COMMAND_REQUEST_STATE, nullptr, 0);
 }
 
-bool MiotCWBS01Api::sync_time(const esphome::time::ESPTime &tm) const {
+bool MiotCWBS01Api::sync_time(const esphome::ESPTime &tm) const {
   ESP_LOGD(TAG, "Sync time %04u-%02u-%02u %02u:%02u:%02u", tm.year, tm.month, tm.day_of_month, tm.hour, tm.minute,
            tm.second);
   if (!tm.is_valid()) {
