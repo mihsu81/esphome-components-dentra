@@ -1,6 +1,6 @@
 #include "esphome/core/log.h"
 #include "esphome/core/application.h"
-#include "esphome/time/esp_time.h"
+#include "esphome/core/time.h"
 
 
 #include "miot_cwbs01.h"
